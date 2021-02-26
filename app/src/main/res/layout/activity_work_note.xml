@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tw.com.imeifoods.cong.eventnote.EventNoteActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TvDep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="廠別"
+                android:textColor="#ff0000"
+                android:textSize="@dimen/font_size" />
+
+            <Spinner
+                android:id="@+id/wrk_spnDept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/font_size" />
+
+            <TextView
+                android:id="@+id/TvLoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="地點 / 樓層"
+                android:textColor="#ff0000"
+                android:textSize="@dimen/font_size" />
+
+            <Spinner
+                android:id="@+id/spnLoca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/font_size" />
+
+            <TextView
+                android:id="@+id/tvWrkItm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="生產作業"
+                android:textColor="#ff0000"
+                android:textSize="@dimen/font_size"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/edtWorkItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textMultiLine"
+                android:textSize="@dimen/font_size" />
+
+            <TextView
+                android:id="@+id/tvWrkSts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="生產狀況"
+                android:textColor="#ff0000"
+                android:textSize="@dimen/font_size" />
+
+            <EditText
+                android:id="@+id/edtWorkStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textMultiLine"
+                android:textSize="@dimen/font_size"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:gravity="center"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnWorkCancer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/ic_menu_revert"
+            android:text="@android:string/cancel"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnWorkSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@android:drawable/ic_menu_save"
+            android:text="@android:string/ok"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

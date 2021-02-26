@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop ="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        tools:context="tw.com.imeifoods.cong.eventnote.FirstSettingActivity">
+
+        <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="請為您的設備命名"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/font_size" />
+
+    <EditText
+        android:id="@+id/EdtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="例如：請輸入姓名...."
+        android:inputType="textPersonName"
+        android:paddingTop="10dp"
+        android:textSize="@dimen/font_size"
+        />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用檢查表"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/font_size"
+        android:layout_marginTop="@dimen/font_size"
+        />
+
+        <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/rdb0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="南崁檢查表"
+                android:textSize="@dimen/font_size" />
+
+            <RadioButton
+                android:id="@+id/rdb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="龍潭檢查表"
+                android:textSize="@dimen/font_size" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/BtnCreateNewDevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="確  定"
+        android:layout_marginTop="30dp"
+        android:textSize="@dimen/font_size"
+        />
+
+</LinearLayout>
+
+

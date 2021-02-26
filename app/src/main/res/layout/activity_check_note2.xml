@@ -1,0 +1,3563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tw.com.imeifoods.cong.eventnote.CheckNote2"
+    android:orientation="vertical">
+
+    <Spinner
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/spn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:id="@+id/LayoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/Layer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_orange_light"
+                        android:text="▶ 餅乾 1F 冷藏室 "
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="溫度："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et1"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="2.0"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="°C"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="狀況："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvTitle1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_orange_light"
+                        android:text="▶ 豆餡 1F 紅豆倉庫 "
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="溫度："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et3"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="18.0"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="°C"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="狀況："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_orange_light"
+                        android:text="▶ 豆餡 1F 冷藏室 "
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="溫度："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et5"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="3.0"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="°C"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="狀況："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_orange_light"
+                        android:text="▶ 糖果 2F 冷藏室 "
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="溫度："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et7"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="3.0"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="°C"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="狀況："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Layer2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_orange_light"
+                        android:text="▶ 二廠 1F 冷凍庫"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="溫度："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et9"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="-24.0"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+                            android:id="@+id/textView32"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="°C"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="狀況："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView34"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_orange_light"
+                        android:text="▶ 二廠 1F 冷藏室"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView35"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="溫度："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et11"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="3.0"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+                            android:id="@+id/textView36"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="°C"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView37"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="狀況："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_orange_light"
+                        android:text="▶ 二廠 6F 冷藏室"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="溫度："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et13"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="4.0"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="°C"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="狀況："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_orange_light"
+                        android:text="▶ 二廠 3F 5RT冷藏室"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="溫度："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et15"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="4.0"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="°C"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="狀況："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView38"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_orange_light"
+                        android:text="▶ 二廠 3F 6RT冷藏室"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView40"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="溫度："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et17"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="4.0"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+                            android:id="@+id/textView41"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="°C"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView42"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="狀況："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Layer3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_orange_light"
+                        android:text="▶ 一廠 LPG-A 桶槽"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="液位："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et19"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="200.0"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="cm"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="使用刻度："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et79"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="200.0"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="            "
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="壓力："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et21"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="10.5"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Kg/cm²"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="            "
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="溫度："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et23"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="28.0"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="°C"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="            "
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="氣化器 #A 溫度："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et25"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="28.0"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="°C"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="            "
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="管路輸送壓力： "
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et27"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="28.0"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Kg/cm²"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="            "
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et28"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Layer4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_orange_light"
+                        android:text="▶ 一廠 LPG-B 桶槽"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="液位："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et29"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="200.0"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="cm"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="使用刻度："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et80"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="200.0"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="            "
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et30"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="壓力："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et31"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="10.5"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Kg/cm²"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="            "
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et32"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="溫度："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et33"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="28.0"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="°C"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="            "
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et34"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="氣化器 #B 溫度："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et35"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="28.0"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="°C"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="            "
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et36"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="氣化器 #C 溫度："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et37"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="28.0"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="°C"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="            "
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et38"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="夾心酥輸送壓力："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et39"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="28.0"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Kg/cm²"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="            "
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et40"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Layer5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView46"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_orange_light"
+                        android:text="▶ 三廠 LPG 桶槽"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView47"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="液位："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et41"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="62.2"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+                            android:id="@+id/textView48"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="cm"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="使用刻度："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et81"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="200.0"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView49"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="            "
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et42"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView51"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="壓力："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et43"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="10.5"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+                            android:id="@+id/textView52"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Kg/cm²"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView53"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="            "
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et44"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="溫度："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et45"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="28.0"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="°C"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="            "
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et46"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="氣化器 #A 溫度："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et47"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="78.5"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="°C"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="            "
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et48"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="氣化器 #B 溫度："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et49"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="78.5"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="°C"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="            "
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="管路輸送壓力： "
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et51"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="28.0"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+                            android:id="@+id/textView56"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Kg/cm²"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView57"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="            "
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et52"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Layer6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView61"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_orange_light"
+                        android:text="▶ 一廠空壓機："
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView62"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="壓力："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et53"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="7.0"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+                            android:id="@+id/textView63"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Kg / cm²"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView64"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="狀況："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et54"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView65"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_orange_light"
+                        android:text="▶ 二廠空壓機"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView66"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="壓力："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et55"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="7.0"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+                            android:id="@+id/textView67"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Kg / cm²"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView68"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="狀況："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et56"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView69"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_orange_light"
+                        android:text="▶ 三廠空壓機"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView70"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="壓力："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et57"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="7.0"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+                            android:id="@+id/textView71"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Kg / cm²"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView72"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="狀況："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et58"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Layer7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView80"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_orange_light"
+                        android:text="▶ 入廠自來水："
+                        android:textSize="20sp" />
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView81"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="入廠總表："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et59"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="86677"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+                            android:id="@+id/textView82"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="CMD"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="使用量："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et82"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="260"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="CMD"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView83"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="狀況："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et60"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView84"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_orange_light"
+                        android:text="▶ 二廠水塔180T"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView85"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="水位："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et61"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="7.0"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+                            android:id="@+id/textView86"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="M"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView87"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="狀況："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et62"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView88"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_orange_light"
+                        android:text="▶ 二廠水塔600T"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView89"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="水位："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et63"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="18"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+                            android:id="@+id/textView90"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="M"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView91"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="狀況："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et64"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView92"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_orange_light"
+                        android:text="▶ 三廠自來水 "
+                        android:textSize="20sp" />
+
+                    <!-- 三廠水表：-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView93"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="三廠水表："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et65"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="900"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+                            android:id="@+id/textView94"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="CMD"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <!-- 三廠水表使用量：-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="使用量："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et83"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="16.0"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="CMD"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView95"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="狀況："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et66"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Layer8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_orange_light"
+                        android:text="▶ 一廠廢水處理場巡檢"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="狀況："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et67"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_orange_light"
+                        android:text="▶ 二廠廢水處理場巡檢"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="狀況："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et68"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_orange_light"
+                        android:text="▶ 鍋爐2F機房檢視"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="狀況："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et69"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_orange_light"
+                        android:text="▶ 廠區變電室檢視"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="狀況："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et70"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView99"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_orange_light"
+                        android:text="▶ 一廠1F溶油室溫度"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView100"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="溫度："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et71"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="50.0"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+                            android:id="@+id/textView101"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="°C"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView102"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="狀況："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et72"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView103"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_orange_light"
+                        android:text="▶ 巧克力新工場-頂樓熱水"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView104"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="溫度："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et73"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="90.0"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+                            android:id="@+id/textView105"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="°C"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView106"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="狀況："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et74"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_orange_light"
+                        android:text="▶ 巧克力新工場-頂樓溫水"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="溫度："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et75"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="45"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="°C"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="狀況："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et76"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView107"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_orange_light"
+                        android:text="▶ 三廠1F氮氣 "
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView108"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="純度："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et77"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"
+                            android:ems="10"
+                            android:hint="99.5"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+
+                        <TextView
+                            android:id="@+id/textView109"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="%"
+                            android:textSize="@dimen/font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView110"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="狀況："
+                            android:textSize="@dimen/font_size" />
+
+                        <EditText
+                            android:id="@+id/et78"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:text="正常"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/font_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Layer9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/textView111"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_orange_light"
+                    android:text="▶ 冷凍庫(A台)庫溫"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView112"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="溫度："
+                        android:textSize="@dimen/font_size"
+                        tools:ignore="DuplicateIds" />
+
+                    <EditText
+                        android:id="@+id/et84"
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_width="71dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.09"
+                        android:elevation="1dp"
+                        android:ems="10"
+                        android:hint="-18.0"
+                        android:inputType="numberSigned|numberDecimal"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="@dimen/font_size" />
+
+                    <TextView
+                        android:id="@+id/textView113"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="°C"
+                        android:textSize="@dimen/font_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="狀況："
+                        android:textSize="@dimen/font_size" />
+
+                    <EditText
+                        android:id="@+id/et85"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="正常"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="@dimen/font_size" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_orange_light"
+                    android:text="▶ 冷凍庫(B台)庫溫"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="溫度："
+                        android:textSize="@dimen/font_size" />
+
+                    <EditText
+                        android:id="@+id/et86"
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_width="71dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.09"
+                        android:elevation="1dp"
+                        android:ems="10"
+                        android:hint="-18.0"
+                        android:inputType="numberSigned|numberDecimal"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="@dimen/font_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="°C"
+                        android:textSize="@dimen/font_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/et87"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="正常"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="@dimen/font_size" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="狀況："
+                        android:textSize="@dimen/font_size" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_orange_light"
+                    android:text="▶ 中庭2F冷凍庫庫溫"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="溫度："
+                        android:textSize="@dimen/font_size" />
+
+                    <EditText
+                        android:id="@+id/et88"
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_width="71dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.09"
+                        android:elevation="1dp"
+                        android:ems="10"
+                        android:hint="-18.0"
+                        android:inputType="numberSigned|numberDecimal"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="@dimen/font_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="°C"
+                        android:textSize="@dimen/font_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="狀況："
+                        android:textSize="@dimen/font_size" />
+
+                    <EditText
+                        android:id="@+id/et89"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="正常"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="@dimen/font_size" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_orange_light"
+                    android:text="▶ 中庭3F冷凍庫庫溫"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="溫度："
+                        android:textSize="@dimen/font_size" />
+
+                    <EditText
+                        android:id="@+id/et90"
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_width="71dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.09"
+                        android:elevation="1dp"
+                        android:ems="10"
+                        android:hint="-18.0"
+                        android:inputType="numberSigned|numberDecimal"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="@dimen/font_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="°C"
+                        android:textSize="@dimen/font_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="狀況："
+                        android:textSize="@dimen/font_size" />
+
+                    <EditText
+                        android:id="@+id/et91"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="正常"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="@dimen/font_size" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_orange_light"
+                    android:text="▶ 中庭4F冷藏庫庫溫"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="溫度："
+                        android:textSize="@dimen/font_size" />
+
+                    <EditText
+                        android:id="@+id/et92"
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_width="71dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.09"
+                        android:elevation="1dp"
+                        android:ems="10"
+                        android:hint="-18.0"
+                        android:inputType="numberSigned|numberDecimal"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="@dimen/font_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="°C"
+                        android:textSize="@dimen/font_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="狀況："
+                        android:textSize="@dimen/font_size" />
+
+                    <EditText
+                        android:id="@+id/et93"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="正常"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="@dimen/font_size" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_orange_light"
+                    android:text="▶ 中庭4F冷凍庫庫溫"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="溫度："
+                        android:textSize="@dimen/font_size" />
+
+                    <EditText
+                        android:id="@+id/et94"
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_width="71dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.09"
+                        android:elevation="1dp"
+                        android:ems="10"
+                        android:hint="-18.0"
+                        android:inputType="numberSigned|numberDecimal"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="@dimen/font_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="°C"
+                        android:textSize="@dimen/font_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="狀況："
+                        android:textSize="@dimen/font_size" />
+
+                    <EditText
+                        android:id="@+id/et95"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="正常"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="@dimen/font_size" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/BtnCancer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@android:drawable/ic_menu_revert"
+            android:elevation="1dp"
+            android:text="取消"
+            android:textSize="@dimen/font_size" />
+
+        <Button
+            android:id="@+id/btnCheckNote1Save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@android:drawable/ic_menu_save"
+            android:text="存檔"
+            android:textSize="@dimen/font_size" />
+
+    </LinearLayout>
+</LinearLayout>

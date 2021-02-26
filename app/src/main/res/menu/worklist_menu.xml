@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_addNewItem"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="新增"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_EventNoteList"
+        android:icon="?android:attr/actionModePasteDrawable"
+        android:title="事件記錄" />
+    <item
+        android:id="@+id/action_CheckNote"
+        android:icon="@android:drawable/checkbox_on_background"
+        android:title="檢查表"
+        app:showAsAction="never" />
+
+</menu>

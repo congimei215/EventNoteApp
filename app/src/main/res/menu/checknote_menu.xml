@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <item
+            android:id="@+id/action_saveButton"
+            android:icon="@android:drawable/ic_menu_save"
+            android:title="Item"
+            app:showAsAction="always" />
+
+        <item
+            android:id="@+id/action_EventNoteList"
+            android:icon="?android:attr/actionModePasteDrawable"
+            android:title="事件記錄" />
+
+        <item
+            android:id="@+id/action_WorkNoteList"
+            android:icon="?android:attr/actionModePasteDrawable"
+            android:title="生產記錄" />
+
+
+</menu>

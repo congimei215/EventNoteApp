@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 可用在使用 Context.getFilesDir() 之類的情況 -->
+    <files-path name= "file_path" path="./"/>
+
+    <!-- 可用在使用 Environment.getExternalStorageDirectory(). Context.getExternalFilesDir() 之類的情況 -->
+    <external-path name="external_path" path="."/>
+    <external-files-path name="external_files_path" path="./"/>
+</paths>
